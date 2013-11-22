@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/add_firstName_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:text="Firstname" />
+
+    <EditText
+        android:id="@+id/add_firstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/add_firstName_label"
+        android:layout_below="@+id/add_firstName_label"
+        android:ems="10"
+        android:hint="Russell"
+        android:inputType="textCapWords" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/add_lastName_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/add_firstName"
+        android:layout_below="@+id/add_firstName"
+        android:layout_marginTop="10dp"
+        android:text="Lastname" />
+
+    <EditText
+        android:id="@+id/add_lastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/add_lastName_label"
+        android:layout_below="@+id/add_lastName_label"
+        android:ems="10"
+        android:hint="Westbrook"
+        android:inputType="textCapWords" />
+
+    <TextView
+        android:id="@+id/add_team_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/add_lastName"
+        android:layout_below="@+id/add_lastName"
+        android:layout_marginTop="10dp"
+        android:text="Team" />
+
+    <EditText
+        android:id="@+id/add_team"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/add_team_label"
+        android:layout_below="@+id/add_team_label"
+        android:ems="10"
+        android:hint="Oklahoma City Thunder"
+        android:inputType="textCapWords" />
+    
+    <TextView
+        android:id="@+id/add_jerseyNumber_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/add_team"
+        android:layout_below="@+id/add_team"
+        android:layout_marginTop="10dp"
+        android:text="Jersey Number" />
+
+    <EditText
+        android:id="@+id/add_jerseyNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/add_jerseyNumber_label"
+        android:layout_below="@+id/add_jerseyNumber_label"
+        android:ems="10"
+        android:hint="0"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/add_height_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/add_jerseyNumber"
+        android:layout_below="@+id/add_jerseyNumber"
+        android:layout_marginTop="10dp"
+        android:text="Height" />
+
+    <EditText
+        android:id="@+id/add_height"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/add_height_label"
+        android:layout_below="@+id/add_height_label"
+        android:ems="10"
+        android:hint="6'2"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/add_weight_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/add_height"
+        android:layout_below="@+id/add_height"
+        android:layout_marginTop="10dp"
+        android:text="Weight" />
+
+    <EditText
+        android:id="@+id/add_weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/add_weight_label"
+        android:layout_below="@+id/add_weight_label"
+        android:ems="10"
+        android:hint="180"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/add_save_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_weight"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Add Player" />
+
+</RelativeLayout>
